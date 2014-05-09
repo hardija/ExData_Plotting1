@@ -1,4 +1,4 @@
-#Exploratory Analysis - Assignment #1
+##Exploratory Data Analysis - Assignment #1
 My submission includes 4 R scripts and 4 png output files.
 
 To run the scripts, the data file "household\_power\_consumption.txt" must be in the folder "data" relative to the scripts. Each script is self contained and can be run indepently from the others.
