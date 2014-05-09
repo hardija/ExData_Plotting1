@@ -1,3 +1,15 @@
+#Exploratory Analysis - Assignment #1
+My submission includes 4 R scripts and 4 png output files.
+
+To run the scripts, the data file "household\_power\_consumption.txt" must be in the folder "data" relative to the scripts. Each script is self contained and can be run indepently from the others.
+
+The png files were produced by running the scripts on a MacBook Pro with R Studio v0.98.501 and R v3.1.0.
+
+Only the base plotting system was used so no additional libraries are needed.
+
+This GitHub repository was forked from [https://github.com/rdpeng/ExData_Plotting1](https://github.com/rdpeng/ExData_Plotting1). The original png files for comparison are in the "figure" folder.
+
+#Instructions
 ## Introduction
 
 This assignment uses data from
