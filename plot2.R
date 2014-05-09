@@ -1,7 +1,7 @@
 # plot2.R
 
 # Check for data file
-datafile1 = "./data/household_power_consumption.txt"
+datafile1 <- "./data/household_power_consumption.txt"
 if (!file.exists(datafile1))
 {
     print(paste("Please place data file here: ", datafile1))
@@ -9,7 +9,7 @@ if (!file.exists(datafile1))
 
 # Read data file
 print("Reading data file")
-d = read.csv(datafile1, sep=";")
+d <- read.csv(datafile1, sep=";")
 
 # Subset first so we're working with just the data we need
 print("Subsetting data")

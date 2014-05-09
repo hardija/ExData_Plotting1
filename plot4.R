@@ -1,7 +1,7 @@
 # plot4.R
 
 # Check for data file
-datafile1 = "./data/household_power_consumption.txt"
+datafile1 <- "./data/household_power_consumption.txt"
 if (!file.exists(datafile1))
 {
     print(paste("Please place data file here: ", datafile1))
@@ -9,7 +9,7 @@ if (!file.exists(datafile1))
 
 # Read data file
 print("Reading data file")
-d = read.csv(datafile1, sep=";")
+d <- read.csv(datafile1, sep=";")
 
 # Subset first so we're working with just the data we need
 print("Subsetting data")
@@ -38,7 +38,7 @@ plot(d2$datetime, d2$Sub_metering_1, col="black", type="n", ylim=c(-1,39), xlab=
 lines(d2$datetime, d2$Sub_metering_1, col="black")#, ylim=c(0,30))
 lines(d2$datetime, d2$Sub_metering_2, col="red")#, ylim=c(0,30))
 lines(d2$datetime, d2$Sub_metering_3, col="blue")#, ylim=c(0,30))
-legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, col=c("black", "red", "blue"), bty="n", x.intersp=0.5, yintersp=0.5)
+legend("topright", legend=c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=1, col=c("black", "red", "blue"), bty="n", x.intersp=0.5, y.intersp=0.9)
 # Upper right
 plot(d2$datetime, d2$Voltage, type="l", xlab="datetime", ylab="Voltage")
 # Lower right
